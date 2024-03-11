@@ -15,7 +15,7 @@ echo '<html>
   </body>
 </html>' > /data/web_static/releases/test/index.html
 # Create a fake HTML file /data/web_static/releases/test/index.html
-ln -sf /data/web_static/releases/test/ /data/web_static/current
+ln -sf /data/web_static/releases/test/index.html /data/web_static/current
 
 chown -hR ubuntu:ubuntu /data/
 
