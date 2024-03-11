@@ -19,7 +19,7 @@ ln -sf /data/web_static/releases/test/index.html /data/web_static/current
 
 chown -hR ubuntu:ubuntu /data/
 
-sed -i '51 i \\n\tlocation /hbnb_static {\n\talias /data/web_static/current;\n\t}' /etc/nginx/sites-available/default
+sed -i '47 i \\n\tlocation /hbnb_static {\n\talias /data/web_static/current;\n\t}' /etc/nginx/sites-available/default
 # Update the Nginx configuration to serve the content of
 
 service nginx restart
